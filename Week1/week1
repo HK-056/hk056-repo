@@ -2,4 +2,4 @@ Installation of Minikube and Docker. Learning of minikube.
 Creating a public GitHub repository. And create Week wise folder.
 Learning of Kubernetes and Docker.
 Installing vs code extension for K8s and Docker, saw some helpful commands for both tools and started practice for them.
-Create a simple python app, dockerize it and deploy it on K8s.
+Learn YAML file creation. Create a simple python app, dockerize it and deploy it on K8s.
