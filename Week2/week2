@@ -1,0 +1,17 @@
+* Create one React app which has 2 Pods. 1st is 3000 for request port and 2nd is 3020 for pull the app. Dockerize the app in Docker desktop. Then Deployment in K8s.In Service 
+  use clusterIP. Using Ingress create 2 services for separate pod: 
+  service 1 for 3000
+  service 2 for 3020
+  Create the whole task in docker private repository.
+* Some commands that I've used for creating this task:
+-> npx create-react-app my-react-app => for creating the react app
+-> cd my-react-app => navigate to the project directory
+-> docker build -t my-react-app-image . => to build docker image
+-> minikube start => to start minikube
+-> docker login => to login into docker registry
+-> docker tag my-react-app-image <registry-username>/my-react-app-image => tag the image in registry
+-> docker push <registry-username>/my-react-app-image => push the image in registry
+-> kubectl apply -f <filename>.yaml => to apply YAML file to Kubernetes Cluster
+-> minikube dashboard => to open the Kubernetes dashboard
+-> kubectl get pods => to get information of all the available pods
+
