@@ -15,3 +15,9 @@
 -> minikube dashboard => to open the Kubernetes dashboard
 -> kubectl get pods => to get information of all the available pods
 
+
+* Create one React app, Dockerize with Multistage image and upload it to docker volume.
+=> Commands that I've used:
+-> docker build -t demo-react . => to build docker image
+-> docker volume create <volume-name> => to create a volume in docker
+-> docker run -d -p 8080:80 --name <container-name> -v <volume-name>:/usr/share/nginx/html <docker-img-name> => to run the docker container
